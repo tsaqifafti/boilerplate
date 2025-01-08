@@ -3,7 +3,7 @@
 pipeline {
 	agent any
 	environment {
-			TARGET_DIR = "C:\\Users\\Administrator\\Downloads\\laravel-boilerplate"
+			TARGET_DIR = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\boilerplateLaravel"
 	}
 	stages {
 		stage('Build laravel with composer'){
