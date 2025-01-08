@@ -8,6 +8,7 @@ pipeline {
 	stages {
 		stage('Build laravel with composer'){
 			steps {
+				bat 'composer -v'
 				bat 'composer install'
 			}
 		}
