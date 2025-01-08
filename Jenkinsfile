@@ -6,6 +6,11 @@ pipeline {
 			TARGET_DIR = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\boilerplateLaravel"
 	}
 	stages {
+		stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
 		stage('Build laravel with composer'){
 			steps {
 				bat 'composer -v'
